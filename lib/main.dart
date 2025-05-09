@@ -1,3 +1,5 @@
+import 'package:client_server_flutter_mi2c/uiview/list_data_user.dart';
+import 'package:client_server_flutter_mi2c/uiview/list_user_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ListDataUserView(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

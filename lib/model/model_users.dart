@@ -29,7 +29,7 @@ class ModelUsers {
     required this.company,
   });
 
-  factory ModelUsers.fromJson(Map<String, dynamic> json) => ModelUsers(
+  factory ModelUsers.fromJson(Map<dynamic, dynamic> json) => ModelUsers(
     id: json["id"],
     name: json["name"],
     username: json["username"],
@@ -67,7 +67,7 @@ class Address {
     required this.geo,
   });
 
-  factory Address.fromJson(Map<String, dynamic> json) => Address(
+  factory Address.fromJson(Map<dynamic, dynamic> json) => Address(
     street: json["street"],
     suite: json["suite"],
     city: json["city"],
@@ -93,7 +93,7 @@ class Geo {
     required this.lng,
   });
 
-  factory Geo.fromJson(Map<String, dynamic> json) => Geo(
+  factory Geo.fromJson(Map<dynamic, dynamic> json) => Geo(
     lat: json["lat"],
     lng: json["lng"],
   );
@@ -115,7 +115,7 @@ class Company {
     required this.bs,
   });
 
-  factory Company.fromJson(Map<String, dynamic> json) => Company(
+  factory Company.fromJson(Map<dynamic, dynamic> json) => Company(
     name: json["name"],
     catchPhrase: json["catchPhrase"],
     bs: json["bs"],
